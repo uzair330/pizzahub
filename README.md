@@ -1,5 +1,5 @@
 
-# Crust & Canvas
+# Modern pizza ordering web application
 
 ## Project Overview
 Modern pizza ordering web application built with Vite, React, TypeScript, Tailwind CSS, and shadcn-ui. It features a modular structure for easy development and scalability.
