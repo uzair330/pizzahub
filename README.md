@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
 
-## Project info
+# Crust & Canvas
 
-**URL**: https://lovable.dev/projects/f35d17cb-fa16-44f9-b03c-158c03561ba0
+## Project Overview
+Modern pizza ordering web application built with Vite, React, TypeScript, Tailwind CSS, and shadcn-ui. It features a modular structure for easy development and scalability.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- 🍕 Menu browsing and ordering
+- 🔒 User authentication (login page)
+- 🛒 Order management
+- 🛠️ Admin dashboard
+- 📱 Responsive design
+- 🎨 Modern UI components (shadcn-ui)
 
-**Use Lovable**
+## Project Structure
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f35d17cb-fa16-44f9-b03c-158c03561ba0) and start prompting.
+```
+src/
+  app/
+    layout.tsx         # Main layout
+    globles.css        # Global styles
+    not-found.tsx      # 404 page
+    page.tsx           # Home page
+    admin/page.tsx     # Admin dashboard
+    login/page.tsx     # Login page
+    menu/page.tsx      # Menu listing
+    order/page.tsx     # Order management
+  components/
+    Footer.tsx         # Footer component
+    Navigation.tsx     # Navigation bar
+    ui/                # UI library components
+  hooks/               # Custom React hooks
+  lib/                 # Utility functions
+public/
+  images/              # Pizza images
+  favicon.ico, robots.txt, etc.
+```
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (recommended: use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+```bash
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Install dependencies
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Alternative Package Managers
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+You can also use `pnpm` or `bun`:
 
-**Use GitHub Codespaces**
+```bash
+pnpm install
+pnpm run dev
+# or
+bun install
+bun run dev
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Scripts
 
-## What technologies are used for this project?
+- `npm run dev` — Start development server
+- `npm run build` — Build for production
+- `npm run preview` — Preview production build
 
-This project is built with:
+## Technologies Used
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- [Nextjs](https://nextjs.org/docs) — Fast build tool
+- [TypeScript](https://www.typescriptlang.org/) — Type safety
+- [Tailwind CSS](https://tailwindcss.com/) — Utility-first CSS
+- [shadcn-ui](https://ui.shadcn.com/) — UI components
 
-## How can I deploy this project?
+## License
 
-Simply open [Lovable](https://lovable.dev/projects/f35d17cb-fa16-44f9-b03c-158c03561ba0) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+MIT
