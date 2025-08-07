@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pizza Restaurant Design System - Minimalist & Professional
+All colors MUST be HSL for perfect theming
+*/
+
+@layer base {
+  :root {
+    /* Background System - Wood-inspired */
+    --background: 35 25% 96%;
+    --foreground: 30 20% 12%;
+
+    /* Card System - Warm cream tones */
+    --card: 35 30% 98%;
+    --card-foreground: 30 20% 12%;
+
+    /* Interactive Elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 15% 15%;
+
+    /* Brand Colors - Modern Italian restaurant palette */
+    --primary: 25 80% 52%;        /* Rich terracotta for warmth */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 25 85% 47%;  /* Deeper on hover */
+
+    /* Secondary - Cream and warm neutrals */
+    --secondary: 40 25% 95%;
+    --secondary-foreground: 30 20% 15%;
+
+    /* Muted Tones - Sophisticated grays with warmth */
+    --muted: 30 10% 92%;
+    --muted-foreground: 30 8% 45%;
+
+    /* Accent - Rich olive green for sophistication */
+    --accent: 120 20% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 120 60% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Form Elements - Natural wood tones */
+    --border: 35 25% 85%;
+    --input: 35 30% 95%;
+    --ring: 45 95% 55%;
+
+    /* Design Tokens */
+    --radius: 0.75rem;
+
+    /* Custom Pizza Restaurant Gradients - Modern & Sophisticated */
+    --gradient-hero: linear-gradient(135deg, hsl(20 30% 15%) 0%, hsl(25 25% 20%) 100%);
+    --gradient-warm: linear-gradient(180deg, hsl(40 25% 98%) 0%, hsl(30 15% 95%) 100%);
+    --gradient-pizza: linear-gradient(45deg, hsl(25 80% 52%) 0%, hsl(30 75% 58%) 50%, hsl(35 70% 62%) 100%);
+    --gradient-wood: linear-gradient(45deg, hsl(25 40% 25%) 0%, hsl(30 35% 30%) 50%, hsl(25 30% 20%) 100%);
+
+    /* Shadows - Natural wood tones */
+    --shadow-soft: 0 4px 20px -2px hsl(30 40% 25% / 0.1);
+    --shadow-elegant: 0 8px 30px -8px hsl(30 20% 12% / 0.15);
+    --shadow-pizza: 0 12px 40px -12px hsl(45 95% 55% / 0.25);
+    --shadow-wood: 0 6px 25px -6px hsl(30 40% 25% / 0.2);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
